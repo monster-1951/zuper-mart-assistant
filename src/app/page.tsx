@@ -15,7 +15,7 @@ import HeroImage from "@/images/2.webp";
 import { faqs, FinalFaq, Generate_6_Random_Numbers } from "@/constants/FewMoreConstants";
 
 // VIP will be sent to backend from the frontend. It's structure is special and needs to be handled with care.
-let VIP: RequestFormat = {
+const VIP: RequestFormat = {
   Conversation_history: [],
   Prompt: { role: "user", content: "" },
 };

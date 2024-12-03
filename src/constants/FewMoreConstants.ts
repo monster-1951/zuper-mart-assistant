@@ -4,7 +4,7 @@ import { ProductName, Products } from "./ProductNames";
 export const Generate_6_Random_Numbers = () => {
   const array: number[] = [];
   for (let i = 0; i < 6; i++) {
-    let random_number = Math.floor(Math.random() * 20);
+    const random_number = Math.floor(Math.random() * 20);
     array[array.length] = random_number;
   }
   return array;
@@ -17,7 +17,7 @@ const RandomProduct = (Products:ProductName[]) => {
 };
 
 export const FinalFaq = (randomNumbers: number[], faqs: SingleMessage[]) => {
-  let finalFaq = [];
+  const finalFaq = [];
   for (let i = 0; i < randomNumbers.length; i++) {
     finalFaq[finalFaq.length] = faqs[randomNumbers[i]];
   }
