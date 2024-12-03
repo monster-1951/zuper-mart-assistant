@@ -22,13 +22,13 @@ export interface SingleProduct extends VectorDoc {
 export interface SingleMessage{
     role:"user"|"assistant",
     content:string,
-    refusal?:any
+    refusal?:null
 }
 
 export interface UserMessage{
     role:"user"|"assistant",
     content:string,
-    refusal?:any
+    refusal?:null
 }
 
 export interface RequestFormat{
